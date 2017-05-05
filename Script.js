@@ -13,9 +13,9 @@ secretButton.addEventListener('click', function () {
       if (isNaN(Guessing)) {
         Guessing = 0
       }
-      if (randomNumber) {
+      if (randomNumber < 20) {
         window.alert('That is correct')
-      } else if (randomNumber > 20) {
+      } else if (randomNumber > 50) {
         window.alert('What? That was rude. You can\'t just star  screaming "Cancel" in the middle of a conversation.')
       } else {
         window.alert('Huh, OK then...')
