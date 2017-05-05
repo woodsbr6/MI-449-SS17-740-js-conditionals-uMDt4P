@@ -15,13 +15,14 @@ secretButton.addEventListener('click', function () {
       }
       if (randomNumber) {
         window.alert('That is correct')
-      } else if (randomNumber > 50) {
+      } else if (randomNumber > 20) {
         window.alert('What? That was rude. You can\'t just star  screaming "Cancel" in the middle of a conversation.')
-      } else (randomNumber)
-      window.alert('Huh, OK then...')
-    } if (Guessing < 10 || Guessing > 50) {
-      window.alert('Nice Try but thats wrong!')
-    } else {
-      window.alert('Wise choice.')
-    } }
-})
+      } else {
+        window.alert('Huh, OK then...')
+      }
+      if (Guessing < 10 || Guessing > 50) {
+        window.alert('Nice Try but thats wrong!')
+      } else {
+        window.alert('Wise choice.')
+      } }
+  } })
