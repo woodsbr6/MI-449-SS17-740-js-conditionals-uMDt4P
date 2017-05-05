@@ -12,25 +12,14 @@ secretButton.addEventListener('click', function () {
       Guessing = parseInt(Guessing)
       if (isNaN(Guessing)) {
         Guessing = 0
-      } if (Guessing === null) {
-        if (randomNumber > 10) {
+      } if (randomNumber > randomNumber * 10) {
           window.alert('That is correct')
         } else if (randomNumber > 50) {
           window.alert('What? That was rude. You can\'t just start screaming "Cancel" in the middle of a conversation.')
-        } else if (randomNumber < 10) {
+        } else (randomNumber < randomNumber * 10)
           window.alert('Huh, OK then...')
-        }
-        if (Guessing < 10 || Guessing > 50) {
-          window.alert('Nice Try but thats wrong!')
-        } else {
-          window.alert('Wise choice.')
-        }
+        } if (Guessing < 10 || Guessing > 50) {
+        window.alert('Nice Try but thats wrong!')
       } else {
-        window.alert('Goodbye!')
-      }
-    } else if (codeword === 'apples') {
-      window.alert('Sorry, wrong fruit.')
-    } else {
-      window.alert('Nice try... 😏')
-    } }
-})
+        window.alert('Wise choice.')
+      } )
