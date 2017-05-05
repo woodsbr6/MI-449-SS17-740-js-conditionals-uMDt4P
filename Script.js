@@ -1,5 +1,5 @@
 var secretButton = document.getElementById('clik-4-secretz')
-var randomNumber = Math.random()
+var randomNumber = Math.random() * 100
 
 secretButton.addEventListener('click', function () {
   var codeword = window.prompt('What\'s the codeword?')
@@ -12,14 +12,16 @@ secretButton.addEventListener('click', function () {
       Guessing = parseInt(Guessing)
       if (isNaN(Guessing)) {
         Guessing = 0
-      } if (randomNumber > randomNumber * 10) {
-          window.alert('That is correct')
-        } else if (randomNumber > 50) {
-          window.alert('What? That was rude. You can\'t just start screaming "Cancel" in the middle of a conversation.')
-        } else (randomNumber < randomNumber * 10)
-          window.alert('Huh, OK then...')
-        } if (Guessing < 10 || Guessing > 50) {
-        window.alert('Nice Try but thats wrong!')
-      } else {
-        window.alert('Wise choice.')
-      } )
+      }
+      if (randomNumber) {
+        window.alert('That is correct')
+      } else if (randomNumber > 50) {
+        window.alert('What? That was rude. You can\'t just star  screaming "Cancel" in the middle of a conversation.')
+      } else (randomNumber)
+      window.alert('Huh, OK then...')
+    } if (Guessing < 10 || Guessing > 50) {
+      window.alert('Nice Try but thats wrong!')
+    } else {
+      window.alert('Wise choice.')
+    } }
+})
